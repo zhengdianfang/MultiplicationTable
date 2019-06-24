@@ -13,3 +13,12 @@ it('should return false when input 10001', () => {
     //then
     expect(inRange).toBe(false);
 });
+
+it('should return true when input 999', () => {
+    //give
+    const inputNumber = 999;
+    //when
+    const inRange = checkValueInRange(inputNumber);
+    //then
+    expect(inRange).toBe(true);
+});
