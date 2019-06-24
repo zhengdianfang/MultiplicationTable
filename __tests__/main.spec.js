@@ -22,3 +22,21 @@ it('should return true when input 999', () => {
     //then
     expect(inRange).toBe(true);
 });
+
+it('should return true when input [2, 4]', () => {
+    const startNumber = 2;
+    const endNumber = 4;
+
+    const valid = compareParamsValid(startNumber, endNumber);
+
+    expect(valid).toBe(true);
+});
+
+it('should return false when input [4, 2]', () => {
+    const startNumber = 4;
+    const endNumber = 2;
+
+    const valid = compareParamsValid(startNumber, endNumber);
+
+    expect(valid).toBe(false);
+});
