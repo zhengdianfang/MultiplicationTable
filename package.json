@@ -1,0 +1,22 @@
+{
+  "name": "com.zhengdianfang.multily_table",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhengdianfang/MultiplicationTable.git"
+  },
+  "author": "Dianfang Zheng",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhengdianfang/MultiplicationTable/issues"
+  },
+  "homepage": "https://github.com/zhengdianfang/MultiplicationTable#readme",
+  "devDependencies": {
+    "jest": "^24.8.0"
+  }
+}
