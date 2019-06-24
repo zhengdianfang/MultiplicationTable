@@ -40,3 +40,41 @@ it('should return false when input [4, 2]', () => {
 
     expect(valid).toBe(false);
 });
+
+it('should null when input [4, 2]', () => {
+    const startNumber = 4;
+    const endNumber = 2;
+
+    const resullt = printMultilyTable(startNumber, endNumber);
+
+    expect(result).toBe(null);
+});
+
+it('should null when input [2, 1001]', () => {
+    const startNumber = 2;
+    const endNumber = 1001;
+
+    const resullt = printMultilyTable(startNumber, endNumber);
+
+    expect(result).toBe(null);
+});
+
+
+it('should right format table  when input [2, 2]', () => {
+    const startNumber = 2;
+    const endNumber = 2;
+
+    const resullt = printMultilyTable(startNumber, endNumber);
+
+    expect(result).toBe('2x2=4');
+});
+
+it('should right format table when input [2, 4]', () => {
+    const startNumber = 2;
+    const endNumber = 4;
+
+    const resullt = printMultilyTable(startNumber, endNumber);
+
+    expect(result).toBe('2x2=4\n2x3=6 3x3=9\n2*4=8 3*4=12 4*4=16');
+
+});
